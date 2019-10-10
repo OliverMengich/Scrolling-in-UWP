@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="ScrollExample1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ScrollExample1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24" >Title 1</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" >
+                  Consider a cylinder fitted with a piston that can move freely upwards and downwards in it.
+                    Let, for the simplicities
+            </TextBlock>
+
+            <StackPanel Orientation="Horizontal" 
+                             Grid.Row="1"
+                             Grid.Column="1"  >
+                <Rectangle Fill="DarkGreen" Width="100" Height="50"/>
+                <Rectangle Fill="Black" Width="100" Height="50"/>
+                <Rectangle Fill="Red" Width="100" Height="50"/>
+            </StackPanel>
+            <TextBlock FontSize="24" Grid.Row="2" >Title 2</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" >
+                  Consider a cylinder fitted with a piston that can move freely upwards and downwards in it.
+                    Let, for the simplicities
+            </TextBlock>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1"  >
+                <Rectangle Fill="DarkGreen" Width="100" Height="50"/>
+                <Rectangle Fill="Black" Width="100" Height="50"/>
+                <Rectangle Fill="Red" Width="100" Height="50"/>
+            </StackPanel>
+            <TextBlock FontSize="24" Grid.Row="4" >Title 3</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" >
+                  Consider a cylinder fitted with a piston that can move freely upwards and downwards in it.
+                    Let, for the simplicities
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" 
+                             Grid.Row="5"
+                             Grid.Column="1"  >
+                <Rectangle Fill="DarkGreen" Width="100" Height="50"/>
+                <Rectangle Fill="Black" Width="100" Height="50"/>
+                <Rectangle Fill="Red" Width="100" Height="50"/>
+            </StackPanel>
+
+        </Grid>
+    </StackPanel>
+
+
+
+
+</Page>
